@@ -33,6 +33,29 @@ body.dark-mode header .container a {
 body.dark-mode header .container img {
   background-color: var(--Rajah-color);
 }
+body.dark-mode .my-data .my-info .info a,
+body.dark-mode .profile-info div p,
+body.dark-mode .my-data .repos ol li div a {
+  background-color: var(--Rajah-color);
+}
+body.dark-mode .my-data .my-info .info a,
+body.dark-mode .profile-info div p,
+body.dark-mode .my-data .repos ol li div a {
+  color: var(--black-color);
+}
+body.dark-mode .my-data .my-info .image p,
+body.dark-mode .my-data .my-info .info h3,
+body.dark-mode .my-data .repos ol li h3 {
+  color: var(--white-color);
+}
+body.dark-mode .my-data .my-info,
+body.dark-mode .profile-info,
+body.dark-mode .my-data .repos ol li {
+  border-color: var(--dark-charcoal);
+}
+img {
+  max-width: 100%;
+}
 header {
   position: sticky;
   top: 0;
@@ -55,4 +78,88 @@ header .container img {
   border-radius: 50%;
   cursor: pointer;
   background-color: #ccccc6c5;
+}
+section .container {
+  padding-top: 40px;
+}
+.my-data .my-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 15px 0;
+  margin-top: 15px;
+  border: 1px solid var(--border-color);
+}
+.my-data .my-info .image img {
+  display: block;
+  width: 150px;
+  margin: auto;
+  border-radius: 50%;
+}
+.my-data .my-info .image p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.705);
+}
+.my-data .my-info .info {
+  width: 45%;
+}
+.my-data .my-info .info h3 {
+  color: rgba(0, 0, 0, 0.705);
+  line-height: 2;
+  margin: 10px 0;
+}
+.my-data .my-info .info p {
+  font-size: 15px;
+}
+.my-data .my-info .info a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: var(--white-color);
+  padding: 10px 25px;
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 5px;
+}
+.my-data .profile-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 15px 0;
+  margin-top: 15px;
+  border: 1px solid var(--border-color);
+}
+.my-data .profile-info div p {
+  padding: 10px 25px;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 5px;
+}
+.my-data .repos ol li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid var(--border-color);
+}
+.my-data .repos ol li div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.my-data .repos ol li div a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 25px;
+  color: var(--white-color);
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 5px;
 }
